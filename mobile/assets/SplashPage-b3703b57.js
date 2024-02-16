@@ -1,0 +1,1 @@
+import{I as e}from"./IllustObject-fc031e91.js";import{_ as o,Q as s,q as c,g as n}from"./index-5a05e45e.js";const a={components:{IllustObject:e}};function p(r,l,_,m,f,u){const t=s("IllustObject");return n(),c(t,{type:"capital"})}const I=o(a,[["render",p]]);export{I as default};
