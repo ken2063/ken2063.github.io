@@ -1,1 +1,0 @@
-import{D as o}from"./DocumentEstimate002Contents-035cb3a3.js";import{_ as e,Q as n,d as s,q as c}from"./index-ec79c33a.js";import"./CarThumb-8212c641.js";const m={components:{DocumentEstimate002Contents:o}};function a(r,p,_,i,u,f){const t=n("DocumentEstimate002Contents");return s(),c(t)}const C=e(m,[["render",a]]);export{C as default};
