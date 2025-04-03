@@ -4,7 +4,10 @@ export default {
 };
 </script>
 
-<template><router-view /><!-- 추가 --></template>
+<template>
+  <!-- wrap -->
+  <div id="wrap"><router-view /><!-- 추가 --></div>
+</template>
 
 <style>
 @import "@/assets/scss/import.scss";

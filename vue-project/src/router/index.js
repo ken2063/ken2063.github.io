@@ -24,6 +24,11 @@ const routes = [
     name: "/comaLab01/HelloWorld",
     component: () => import("@/views/layout/comaLab01/HelloWorld.vue"),
   },
+  {
+    path: "/comaLab01/CareerDescription",
+    name: "/comaLab01/CareerDescription",
+    component: () => import("@/views/layout/comaLab01/CareerDescription.vue"),
+  },
 
   //   전태수
   {

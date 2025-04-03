@@ -54,7 +54,27 @@
     family: sans-serif;
   }
 }
-
+@mixin big-txt {
+  /* 선언 */
+  font: {
+    size: 28px;
+    weight: bold;
+    family: sans-serif;
+  }
+}
 h1 {
   @include large-txt; /* 사용 */
+}
+
+.fs-small {
+  @include small-txt;
+}
+.fs-normal {
+  @include normal-txt;
+}
+.fs-large {
+  @include large-txt;
+}
+.fs-big {
+  @include big-txt;
 }

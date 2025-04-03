@@ -60,6 +60,38 @@
             </td>
           </tr>
           <!-- // tr -->
+
+          <!-- tr -->
+          <tr>
+            <td>2</td>
+            <td class="file">
+              <router-link to="/comaLab01/CareerDescription" target="_blank"
+                >@/views/layout/comaLab01/CareerDescription.vue</router-link
+              >
+            </td>
+            <td>2025.04.03</td>
+            <td>2025.04.03</td>
+            <td>
+              <div class="state">
+                <p class="txt">100%</p>
+                <span style="width: 100%"></span>
+              </div>
+            </td>
+            <td>2025.04.03</td>
+            <td>
+              <ul class="log">
+                <!-- log - li -->
+                <li class="flex">
+                  <!-- 수정내용 작성 -->
+
+                  <p class="date">2025.04.03</p>
+                  <div class="txt">경력 기술서 제작</div>
+                </li>
+                <!-- // log - li -->
+              </ul>
+            </td>
+          </tr>
+          <!-- // tr -->
         </tbody>
       </table>
     </div>
