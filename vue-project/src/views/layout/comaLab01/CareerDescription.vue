@@ -673,5 +673,5 @@
 </template>
 
 <style>
-@import "@/assets/scss/Uiguide/codeLab01.scss";
+@import "@/assets/scss/Uiguide/comaLab01/CareerDescription.scss";
 </style>

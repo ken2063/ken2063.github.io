@@ -1,0 +1,215 @@
+.contents {
+  padding-top: 14px;
+  margin: 0 -20px;
+  background-color: #f1f4f8;
+
+  #home {
+    padding: 0 20px;
+    h2 {
+      margin: 0 auto 40px;
+      text-align: center;
+    }
+  }
+  #about {
+    padding: 0 20px;
+    h2 {
+      margin: 0 auto 40px;
+      text-align: center;
+    }
+  }
+  #skill {
+    padding: 40px 20px 40px;
+    margin: 0 -20px;
+    background-color: #6152ea;
+
+    h2 {
+      margin: 0 auto 10px;
+      text-align: center;
+      color: #fff;
+    }
+    .scroll-box-table {
+      width: 100%;
+      overflow-x: auto;
+      padding-bottom: 60px;
+      padding-left: 20px;
+      margin: 0 auto -60px;
+
+      .con-box {
+        display: flex;
+        align-items: flex-start;
+        width: 1500px;
+        li {
+          width: 280px;
+          margin-right: 20px;
+          background-color: #fff;
+          border-radius: 12px;
+          overflow: hidden;
+          padding: 20px 30px;
+          box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.0784313725);
+
+          .thumb {
+            width: 100px;
+            height: 100px;
+            margin: 20px auto;
+            overflow: hidden;
+            text-align: center;
+
+            img {
+              height: 100%;
+              width: auto;
+              object-fit: cover;
+            }
+          }
+          dl {
+            .pub-tit {
+              font-size: 24px;
+              font-weight: 700;
+              margin-bottom: 10px;
+            }
+            .pub-txt {
+              font-size: 14px;
+              color: #747478;
+            }
+          }
+        }
+      }
+    }
+  }
+  #portfolio {
+    padding: 0 20px;
+    h2 {
+      margin: 0 auto 40px;
+      text-align: center;
+    }
+  }
+  #career {
+    position: relative;
+    padding: 0 20px 40px;
+    margin: 0 auto 0;
+    // background: url("/src/assets/images/comaLab01/portfolio/bg_career.jpg")
+    //   no-repeat center center;
+    // &::after {
+    //   content: "";
+    //   display: inline-block;
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    //   width: 100%;
+    //   height: 100%;
+    //   background-color: rgb(0, 0, 0, 0.4);
+    //   z-index: 2;
+    // }
+    h2 {
+      position: relative;
+      margin: 0 auto 10px;
+      text-align: center;
+    }
+    .con-box {
+      li {
+        margin-bottom: 20px;
+        background-color: #fff;
+        border-radius: 12px;
+        overflow: hidden;
+        padding: 15px 20px;
+        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.0784313725);
+
+        .flag01 {
+          display: inline-block;
+          margin-bottom: 4px;
+          padding: 4px 10px;
+          background-color: #e8f3ff;
+          color: #2c57ce;
+          font-size: 10px;
+          font-weight: 500;
+          border-radius: 40px;
+        }
+        .flag02 {
+          display: inline-block;
+          margin-bottom: 6px;
+          padding: 4px 10px;
+          background-color: #f1f4f8;
+          color: #111;
+          font-size: 10px;
+          font-weight: 500;
+          border-radius: 40px;
+        }
+        .flag03 {
+          display: inline-block;
+          margin-bottom: 6px;
+          padding: 4px 10px;
+          background-color: #f1f0fe;
+          color: #4b3eb6;
+          font-size: 10px;
+          font-weight: 500;
+          border-radius: 40px;
+        }
+        .com_name01 {
+          margin-bottom: 8px;
+          font-size: 20px;
+          font-weight: 700;
+        }
+        .com_name02 {
+          font-size: 14px;
+        }
+        .work {
+          position: relative;
+          margin-right: 10px;
+          padding-right: 10px;
+          color: #747478;
+
+          &::after {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            top: 6px;
+            right: 0;
+            width: 1px;
+            height: 10px;
+            background-color: #ddd;
+          }
+        }
+        .date {
+          color: #747478;
+        }
+      }
+    }
+  }
+  #contact {
+    padding: 0 20px 40px;
+    margin: 0 auto 0;
+
+    h2 {
+      margin: 0 auto 10px;
+      text-align: center;
+    }
+    .con-box {
+      background-color: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      padding: 40px;
+      box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.0784313725);
+
+      .thumb {
+        margin: 0 -40px 20px;
+      }
+      .p-tit {
+        padding-bottom: 6px;
+        margin-bottom: 12px;
+        border-bottom: 1px solid #2c57ce;
+      }
+      dl {
+        .tit {
+          font-weight: 700;
+        }
+        .txt {
+          margin-bottom: 6px;
+          color: #818181;
+        }
+      }
+    }
+  }
+}
+
+img {
+  width: 100%;
+}

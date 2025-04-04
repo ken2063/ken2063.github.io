@@ -92,6 +92,38 @@
             </td>
           </tr>
           <!-- // tr -->
+
+          <!-- tr -->
+          <tr>
+            <td>3</td>
+            <td class="file">
+              <router-link to="/comaLab01/Portfolio" target="_blank"
+                >@/views/layout/comaLab01/Portfolio.vue</router-link
+              >
+            </td>
+            <td>2025.04.04</td>
+            <td>2025.04.04</td>
+            <td>
+              <div class="state">
+                <p class="txt">100%</p>
+                <span style="width: 100%"></span>
+              </div>
+            </td>
+            <td>2025.04.03</td>
+            <td>
+              <ul class="log">
+                <!-- log - li -->
+                <li class="flex">
+                  <!-- 수정내용 작성 -->
+
+                  <p class="date">2025.04.04</p>
+                  <div class="txt">포트폴리오 vue 제작</div>
+                </li>
+                <!-- // log - li -->
+              </ul>
+            </td>
+          </tr>
+          <!-- // tr -->
         </tbody>
       </table>
     </div>

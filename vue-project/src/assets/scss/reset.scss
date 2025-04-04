@@ -23,6 +23,7 @@ html {
   line-height: 1.5;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  color: #111;
 }
 html,
 body {
@@ -448,5 +449,5 @@ select::-ms-expand {
 }
 
 #wrap {
-  padding: 40px 20px;
+  padding: 40px 20px 0;
 }
