@@ -1,7 +1,5 @@
-<script>
-export default {
-  name: "defaultMenuContent",
-};
+<script setup>
+// 별도의 로직이 없으므로 비워둡니다.
 </script>
 
 <template>
@@ -25,3 +23,7 @@ export default {
     </div>
   </div>
 </template>
+
+<style scoped>
+/* 필요에 따라 스타일을 추가하세요 */
+</style>

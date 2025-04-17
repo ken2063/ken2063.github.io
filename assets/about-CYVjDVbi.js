@@ -1,0 +1,1 @@
+import{c as e,a as s,o as t}from"./index-BOYXrTmj.js";const a={id:"about"},l={__name:"about",setup(c){return(n,o)=>(t(),e("section",a,o[0]||(o[0]=[s("h2",{class:"fs-big"},"ABOUT",-1),s("div",{class:"con-box"},null,-1)])))}};export{l as default};

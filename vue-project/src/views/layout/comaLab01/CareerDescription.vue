@@ -1,4 +1,6 @@
-<script></script>
+<script setup>
+// 별도의 로직이 없으므로 비워둡니다.
+</script>
 
 <template>
   <!-- cont -->

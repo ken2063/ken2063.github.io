@@ -1,8 +1,5 @@
-<script>
-export default {
-  name: "defaultFooter",
-  components: {},
-};
+<script setup>
+// 별도의 로직이 없으므로 비워둡니다.
 </script>
 
 <template>
@@ -13,6 +10,6 @@ export default {
   </footer>
 </template>
 
-<style>
+<style lang="scss">
 @import "@/assets/scss/Uiguide/comaLab01/defaultfooter.scss";
 </style>

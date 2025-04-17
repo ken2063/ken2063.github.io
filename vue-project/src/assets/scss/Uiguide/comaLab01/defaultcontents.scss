@@ -4,14 +4,65 @@
   background-color: #f1f4f8;
 
   #home {
-    padding: 0 20px;
+    padding: 0;
     h2 {
       margin: 0 auto 40px;
       text-align: center;
     }
+    .bx-wrapper {
+      box-shadow: none;
+      border: none;
+
+      .bxslider {
+        li {
+          position: relative;
+          height: 100vh;
+
+          .txt-box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 300px;
+            width: 100%;
+            text-align: center;
+
+            .tit {
+              text-align: center;
+              color: #fff;
+              line-height: 34px;
+            }
+
+            .txt {
+              margin-top: 10px;
+              display: inline-block;
+              text-align: center;
+              color: #fff;
+            }
+          }
+          img {
+            object-fit: cover;
+            height: 100%;
+          }
+        }
+      }
+    }
+    .bx-controls {
+      .bx-pager {
+        bottom: 15px;
+
+        .bx-pager-item {
+          a {
+            &.active {
+              background-color: #fff;
+            }
+          }
+        }
+      }
+    }
   }
   #about {
-    padding: 0 20px;
+    padding: 0 20px 40px;
     h2 {
       margin: 0 auto 40px;
       text-align: center;
@@ -19,7 +70,7 @@
   }
   #skill {
     padding: 40px 20px 40px;
-    margin: 0 -20px;
+    margin: 0 -20px 40px;
     background-color: #6152ea;
 
     h2 {
@@ -30,9 +81,8 @@
     .scroll-box-table {
       width: 100%;
       overflow-x: auto;
-      padding-bottom: 60px;
       padding-left: 20px;
-      margin: 0 auto -60px;
+      margin: 0 auto;
 
       .con-box {
         display: flex;
@@ -76,7 +126,7 @@
     }
   }
   #portfolio {
-    padding: 0 20px;
+    padding: 0 20px 40px;
     h2 {
       margin: 0 auto 40px;
       text-align: center;

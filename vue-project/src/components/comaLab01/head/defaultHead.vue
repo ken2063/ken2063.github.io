@@ -1,16 +1,9 @@
-<script>
+<script setup>
 import defaultMenu from "@/components/comaLab01/head/defaultMenu.vue";
-
-export default {
-  name: "defaultHead",
-  components: {
-    defaultMenu,
-  },
-};
 </script>
 
 <template>
-  <header>
+  <header id="header">
     <h1>
       <a href="#"></a>
     </h1>
@@ -18,6 +11,6 @@ export default {
   </header>
 </template>
 
-<style>
+<style lang="scss">
 @import "@/assets/scss/Uiguide/comaLab01/defaulthead.scss";
 </style>

@@ -1,20 +1,9 @@
-<script>
+<script setup>
 import codeLab01 from "@/views/layout/comaLab01/index.vue";
 import codeLab02 from "@/views/layout/comaLab02/index.vue";
 import codeLab03 from "@/views/layout/comaLab03/index.vue";
 import codeLab04 from "@/views/layout/comaLab04/index.vue";
 import codeLab05 from "@/views/layout/comaLab05/index.vue";
-
-export default {
-  name: "indexGuide",
-  components: {
-    codeLab01,
-    codeLab02,
-    codeLab03,
-    codeLab04,
-    codeLab05,
-  },
-};
 </script>
 
 <template>
