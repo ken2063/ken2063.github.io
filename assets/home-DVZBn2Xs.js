@@ -1,0 +1,1 @@
+import{_ as e,c as o,o as t}from"./index-BYD9wXnQ.js";const c={name:"home",components:{}},n={id:"home"};function s(r,a,_,m,p,i){return t(),o("section",n,"home")}const f=e(c,[["render",s]]);export{f as default};

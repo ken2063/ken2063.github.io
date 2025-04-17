@@ -50,8 +50,8 @@
 
             <td>LGU<sup>+</sup> 운영 (PC/MO/APP)</td>
             <td>2024.04 ~ 2025.04</td>
-            <td>프레임아웃/디플러<br />(프리랜서)</td>
             <td>LGU<sup>+</sup></td>
+            <td>프레임아웃/디플러<br /><span class="flag01">프리랜서</span></td>
             <td>퍼블리싱</td>
 
             <td>win</td>
@@ -68,8 +68,8 @@
 
             <td>LGU<sup>+</sup> 웹접근성 획득</td>
             <td>2024.07 ~ 2024.09</td>
-            <td>프레임아웃/디플러<br />(프리랜서)</td>
             <td>LGU<sup>+</sup></td>
+            <td>프레임아웃/디플러<br /><span class="flag01">프리랜서</span></td>
             <td>퍼블리싱</td>
 
             <td>win</td>
@@ -86,8 +86,8 @@
 
             <td>제주은행 제주지니 (PC/MO/APP)</td>
             <td>2022.07 ~ 2023.12</td>
-            <td>코코아드림<br />(프리랜서)</td>
             <td>제주은행</td>
+            <td>코코아드림<br /><span class="flag01">프리랜서</span></td>
             <td>퍼블리싱</td>
 
             <td>mac</td>
@@ -104,8 +104,8 @@
 
             <td>신한카드 마이데이터 (APP)</td>
             <td>2022.01 ~ 2022.06</td>
-            <td>미래아이씨티<br />(프리랜서)</td>
             <td>신한카드</td>
+            <td>미래아이씨티<br /><span class="flag01">프리랜서</span></td>
             <td>퍼블리싱</td>
 
             <td>mac</td>
@@ -122,8 +122,8 @@
 
             <td>아시아경제 운영</td>
             <td>2018.01 ~ 2021.12</td>
-            <td>아시아경제<br />(정규직)</td>
             <td>아시아경제</td>
+            <td>아시아경제<br /><span class="flag02">정규직</span></td>
             <td>퍼블리싱</td>
 
             <td>mac</td>
@@ -140,8 +140,8 @@
 
             <td>재보궐선거</td>
             <td>2021.03 ~ 2021.04</td>
-            <td>아시아경제<br />(정규직)</td>
             <td>아시아경제</td>
+            <td>아시아경제<br /><span class="flag02">정규직</span></td>
             <td>퍼블리싱</td>
 
             <td>mac</td>
@@ -158,8 +158,8 @@
 
             <td>Google AMP(Accelerated Mobile Pages)</td>
             <td>2020.10 ~ 2020.11</td>
-            <td>아시아경제<br />(정규직)</td>
             <td>아시아경제</td>
+            <td>아시아경제<br /><span class="flag02">정규직</span></td>
             <td>퍼블리싱</td>
 
             <td>mac</td>
@@ -176,8 +176,8 @@
 
             <td>아경CORE</td>
             <td>2020.09 ~ 2021.01</td>
-            <td>아시아경제<br />(정규직)</td>
             <td>아시아경제</td>
+            <td>아시아경제<br /><span class="flag02">정규직</span></td>
             <td>퍼블리싱</td>
 
             <td>mac</td>
@@ -194,8 +194,8 @@
 
             <td>밸류업심포지움</td>
             <td>2020.09 ~ 2020.09</td>
-            <td>아시아경제<br />(정규직)</td>
             <td>아시아경제</td>
+            <td>아시아경제<br /><span class="flag02">정규직</span></td>
             <td>퍼블리싱</td>
 
             <td>mac</td>
@@ -212,8 +212,8 @@
 
             <td>간편집밥 한상차림</td>
             <td>2020.04 ~ 2020.05</td>
-            <td>아시아경제<br />(정규직)</td>
             <td>아시아경제</td>
+            <td>아시아경제<br /><span class="flag02">정규직</span></td>
             <td>퍼블리싱</td>
 
             <td>mac</td>
@@ -230,8 +230,8 @@
 
             <td>양낙규의디펜스클럽</td>
             <td>2019.10 ~ 2019.11</td>
-            <td>아시아경제<br />(정규직)</td>
             <td>아시아경제</td>
+            <td>아시아경제<br /><span class="flag02">정규직</span></td>
             <td>퍼블리싱</td>
 
             <td>mac</td>
@@ -248,8 +248,8 @@
 
             <td>드링킷</td>
             <td>2019.06 ~ 2019.11</td>
-            <td>아시아경제<br />(정규직)</td>
             <td>아시아경제</td>
+            <td>아시아경제<br /><span class="flag02">정규직</span></td>
             <td>퍼블리싱</td>
 
             <td>mac</td>
@@ -266,8 +266,8 @@
 
             <td>사주</td>
             <td>2019.04 ~ 2019.07</td>
-            <td>아시아경제<br />(정규직)</td>
             <td>아시아경제</td>
+            <td>아시아경제<br /><span class="flag02">정규직</span></td>
             <td>퍼블리싱</td>
 
             <td>mac</td>
@@ -284,8 +284,8 @@
 
             <td>인트라넷</td>
             <td>2018.02 ~ 2018.04</td>
-            <td>아시아경제<br />(정규직)</td>
             <td>아시아경제</td>
+            <td>아시아경제<br /><span class="flag02">정규직</span></td>
             <td>퍼블리싱</td>
 
             <td>mac</td>
@@ -302,8 +302,10 @@
 
             <td>NICE평가정보 사이트 운영(PC/MO)</td>
             <td>2017.05 ~ 2017.07</td>
-            <td>NICE평가정보<br />(플랜브이 계약직)</td>
             <td>Skt</td>
+            <td>
+              NICE평가정보<br />플랜브이<br /><span class="flag03">계약직</span>
+            </td>
             <td>퍼블리싱</td>
 
             <td>Win</td>
@@ -320,8 +322,10 @@
 
             <td>SKT- 신용지키미(유/무료)</td>
             <td>2017.05 ~ 2017.07</td>
-            <td>NICE평가정보<br />(플랜브이 계약직)</td>
             <td>Skt</td>
+            <td>
+              NICE평가정보<br />플랜브이<br /><span class="flag03">계약직</span>
+            </td>
             <td>퍼블리싱</td>
 
             <td>Win</td>
@@ -338,8 +342,10 @@
 
             <td>V3 - 365</td>
             <td>2017.04 ~ 2017.05</td>
-            <td>NICE평가정보<br />(플랜브이 계약직)</td>
             <td>V3</td>
+            <td>
+              NICE평가정보<br />플랜브이<br /><span class="flag03">계약직</span>
+            </td>
             <td>퍼블리싱</td>
 
             <td>Win</td>
@@ -356,8 +362,10 @@
 
             <td>하나카드 - 내차지키미</td>
             <td>2017.03 ~ 2017.04</td>
-            <td>NICE평가정보<br />(플랜브이 계약직)</td>
             <td>하나카드</td>
+            <td>
+              NICE평가정보<br />플랜브이<br /><span class="flag03">계약직</span>
+            </td>
             <td>퍼블리싱</td>
 
             <td>Win</td>
@@ -374,8 +382,10 @@
 
             <td>국민카드 – 이지오토케어</td>
             <td>2017.02 ~ 2017.03</td>
-            <td>NICE평가정보<br />(플랜브이 계약직)</td>
             <td>국민카드</td>
+            <td>
+              NICE평가정보<br />플랜브이<br /><span class="flag03">계약직</span>
+            </td>
             <td>퍼블리싱</td>
 
             <td>Win</td>
@@ -392,8 +402,10 @@
 
             <td>롯데카드 – 올마이카</td>
             <td>2017.01 ~ 2017.02</td>
-            <td>NICE평가정보<br />(플랜브이 계약직)</td>
             <td>롯데카드</td>
+            <td>
+              NICE평가정보<br />플랜브이<br /><span class="flag03">계약직</span>
+            </td>
             <td>퍼블리싱</td>
 
             <td>Win</td>
@@ -410,8 +422,10 @@
 
             <td>삼성카드 – 종합정보보호</td>
             <td>2016.11 ~ 2016.12</td>
-            <td>NICE평가정보<br />(플랜브이 계약직)</td>
             <td>삼성카드</td>
+            <td>
+              NICE평가정보<br />플랜브이<br /><span class="flag03">계약직</span>
+            </td>
             <td>퍼블리싱</td>
 
             <td>Win</td>
@@ -428,8 +442,10 @@
 
             <td>신한카드 – 마이카</td>
             <td>2016.08 ~ 2016.09</td>
-            <td>NICE평가정보<br />(플랜브이 계약직)</td>
             <td>신한카드</td>
+            <td>
+              NICE평가정보<br />플랜브이<br /><span class="flag03">계약직</span>
+            </td>
             <td>퍼블리싱</td>
 
             <td>Win</td>
@@ -446,8 +462,10 @@
 
             <td>우리카드 – 이지오토플러스</td>
             <td>2016.05 ~ 2016.06</td>
-            <td>NICE평가정보<br />(플랜브이 계약직)</td>
             <td>우리카드</td>
+            <td>
+              NICE평가정보<br />플랜브이<br /><span class="flag03">계약직</span>
+            </td>
             <td>퍼블리싱</td>
 
             <td>Win</td>
@@ -464,8 +482,8 @@
 
             <td>CJ라이온 - 락토페린</td>
             <td>2015.03 ~ 2015.06</td>
-            <td>워드앤코드<br />(정규직)</td>
             <td>CJ라이온</td>
+            <td>워드앤코드<br /><span class="flag02">정규직</span></td>
             <td>퍼블리싱</td>
 
             <td>Win</td>
@@ -482,8 +500,8 @@
 
             <td>고려대학교 의료원</td>
             <td>2014.09 ~ 2014.12</td>
-            <td>워드앤코드<br />(정규직)</td>
             <td>고려대학교</td>
+            <td>워드앤코드<br /><span class="flag02">정규직</span></td>
             <td>퍼블리싱</td>
 
             <td>Win</td>
@@ -500,8 +518,8 @@
 
             <td>사학연금</td>
             <td>2013.05 ~ 2013.12</td>
-            <td>워드앤코드<br />(정규직)</td>
             <td>사학연금</td>
+            <td>워드앤코드<br /><span class="flag02">정규직</span></td>
             <td>퍼블리싱</td>
 
             <td>Win</td>
@@ -518,8 +536,8 @@
 
             <td>안전실천연합</td>
             <td>2013.05 ~ 2013.07</td>
-            <td>워드앤코드<br />(정규직)</td>
             <td>안전실천연합</td>
+            <td>워드앤코드<br /><span class="flag02">정규직</span></td>
             <td>퍼블리싱</td>
 
             <td>Win</td>
@@ -536,8 +554,8 @@
 
             <td>오송팜</td>
             <td>2012.09 ~ 2012.12</td>
-            <td>워드앤코드<br />(정규직)</td>
             <td>오송팜</td>
+            <td>워드앤코드<br /><span class="flag02">정규직</span></td>
             <td>퍼블리싱</td>
 
             <td>Win</td>
@@ -576,8 +594,9 @@
         <tbody>
           <tr>
             <td colspan="11">
-              Photoshop / Flash / Dreamweaver / illustrator / css style, jquery,
-              html, html5, css3, vue3, react, git, zeplin, figma, vscode
+              HTML / CSS / SCSS / Jquery / <strong>Javascript</strong> /
+              <strong>Vue</strong> / <strong>React</strong> / Photoshop /
+              illustrator / git / zeplin / Figma / VScode
             </td>
           </tr>
         </tbody>
@@ -638,7 +657,7 @@
 
           <!-- tr -->
           <tr>
-            <td class="fw-b">아시아경제(정규직)<br />4년</td>
+            <td class="fw-b">아시아경제 (정규직)<br />4년</td>
             <td>2018.01 – 2021.12</td>
             <td>대리</td>
             <td>퍼블리싱</td>
