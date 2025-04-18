@@ -1,5 +1,5 @@
 <script setup>
-import defaultMenu from "@/components/comaLab01/head/defaultMenu.vue";
+// import defaultMenu from "@/components/comaLab01/head/defaultMenu.vue";
 </script>
 
 <template>
@@ -8,7 +8,7 @@ import defaultMenu from "@/components/comaLab01/head/defaultMenu.vue";
       <h1>
         <a href="#">ED portfolio</a>
       </h1>
-      <defaultMenu class="hamButton"></defaultMenu>
+      <!-- <defaultMenu class="hamButton"></defaultMenu> -->
     </div>
   </header>
 </template>

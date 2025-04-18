@@ -1,4 +1,6 @@
 <script setup>
+const imgSrc = "./images/comaLab01/portfolio/my.png";
+
 import { ref, onMounted, onUnmounted } from "vue";
 import Contact from "@/components/comaLab01/contents/contact.vue"; // 대문자로!
 
@@ -27,7 +29,9 @@ onUnmounted(() => {
 
 <template>
   <div class="foot-box" :class="{ show: isShowClass }">
-    <button @click="isContactOpen = true">?</button>
+    <button @click="isContactOpen = true">
+      <img :src="imgSrc" alt="" />
+    </button>
   </div>
 
   <!-- Contact 팝업: isContactOpen이 true일 때만 표시 -->

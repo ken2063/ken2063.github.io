@@ -141,6 +141,7 @@
       background-size: cover;
     }
   }
+
   #skill {
     padding: 40px 20px 0;
 
@@ -179,6 +180,12 @@
             border-bottom: 0;
           }
 
+          &:nth-child(6) {
+            .thumb {
+              background-color: #f7df1e;
+            }
+          }
+
           .thumb {
             position: relative;
             width: 50px;
@@ -213,6 +220,7 @@
       }
     }
   }
+
   #portfolio {
     margin-top: 40px;
     padding: 40px 20px;
@@ -302,6 +310,7 @@
       }
     }
   }
+
   #career {
     position: relative;
     padding: 40px 20px;

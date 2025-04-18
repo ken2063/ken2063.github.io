@@ -25,14 +25,14 @@ onMounted(() => {
       <li class="slide01">
         <div class="txt-box">
           <p class="tit">WELCOME TO MY<br />PORTFOLIO</p>
-          <span class="txt">저의 포트폴리오를 소개합니다.</span>
+          <span class="txt">저의 포트폴리오를 소개합니다.01</span>
         </div>
       </li>
 
       <li class="slide02">
         <div class="txt-box">
           <p class="tit">WELCOME TO MY<br />PORTFOLIO</p>
-          <span class="txt">저의 포트폴리오를 소개합니다.</span>
+          <span class="txt">저의 포트폴리오를 소개합니다.02</span>
         </div>
       </li>
     </ul>

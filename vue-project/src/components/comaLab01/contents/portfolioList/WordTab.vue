@@ -1,22 +1,22 @@
 <script setup>
 const wordPortfolio = [
   {
-    img: "/src/assets/images/comaLab01/portfolio/portfolioList/word01.jpg", // 이미지 경로 입력
+    img: "./images/comaLab01/portfolio/portfolioList/word01.jpg", // 이미지 경로 입력
     title: "워드앤코드",
     desc: "CJ라이온 - 락토페린 PC 구축 및 운영",
   },
   {
-    img: "/src/assets/images/comaLab01/portfolio/portfolioList/word02.jpg", // 이미지 경로 입력
+    img: "./images/comaLab01/portfolio/portfolioList/word02.jpg", // 이미지 경로 입력
     title: "워드앤코드",
     desc: "고려대학교 의료원 PC 구축 및 운영",
   },
   {
-    img: "/src/assets/images/comaLab01/portfolio/portfolioList/word03.jpg", // 이미지 경로 입력
+    img: "./images/comaLab01/portfolio/portfolioList/word03.jpg", // 이미지 경로 입력
     title: "워드앤코드",
     desc: "사학연금 PC 구축 및 운영",
   },
   {
-    img: "/src/assets/images/comaLab01/portfolio/portfolioList/word04.jpg", // 이미지 경로 입력
+    img: "./images/comaLab01/portfolio/portfolioList/word04.jpg", // 이미지 경로 입력
     title: "워드앤코드",
     desc: "안전실천연합 PC 구축 및 운영",
   },

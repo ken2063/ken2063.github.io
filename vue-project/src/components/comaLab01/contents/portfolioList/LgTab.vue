@@ -1,12 +1,12 @@
 <script setup>
 const lgPortfolio = [
   {
-    img: "/src/assets/images/comaLab01/portfolio/portfolioList/lgu01.jpg", // 이미지 경로 입력
+    img: "./images/comaLab01/portfolio/portfolioList/lgu01.jpg", // 이미지 경로 입력
     title: "LG U+",
     desc: "PC/MO/APP 운영",
   },
   {
-    img: "/src/assets/images/comaLab01/portfolio/portfolioList/lgu02.png", // 이미지 경로 입력
+    img: "./images/comaLab01/portfolio/portfolioList/lgu02.png", // 이미지 경로 입력
     title: "LG U+",
     desc: "웹접근성 획득",
   },

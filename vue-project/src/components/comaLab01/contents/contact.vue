@@ -1,5 +1,5 @@
 <script setup>
-// 별도의 로직이 없으므로 비워둡니다.
+const imgSrc = "./images/comaLab01/portfolio/pic.jpg";
 </script>
 
 <template>
@@ -10,7 +10,7 @@
       <h2 class="fs-big">CONTACT</h2>
       <div class="con-box">
         <div class="thumb">
-          <img src="/src/assets/images/comaLab01/portfolio/pic.jpg" alt="" />
+          <img :src="imgSrc" alt="" />
         </div>
 
         <p class="fs-large p-tit">CONTACT</p>
