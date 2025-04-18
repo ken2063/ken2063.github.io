@@ -5,7 +5,6 @@ import about from "@/components/comaLab01/contents/about.vue";
 import skill from "@/components/comaLab01/contents/skill.vue";
 import portfolio from "@/components/comaLab01/contents/portfolio.vue";
 import career from "@/components/comaLab01/contents/career.vue";
-import contact from "@/components/comaLab01/contents/contact.vue";
 
 // 커스텀 디렉티브 등록
 const vFadeUp = {
@@ -27,12 +26,11 @@ const vFadeUp = {
 
 <template>
   <div class="contents">
-    <section v-fade-up="vFadeUp"><home /></section>
+    <section><home /></section>
     <section v-fade-up="vFadeUp"><about /></section>
     <section v-fade-up="vFadeUp"><skill /></section>
     <section v-fade-up="vFadeUp"><portfolio /></section>
     <section v-fade-up="vFadeUp"><career /></section>
-    <section v-fade-up="vFadeUp"><contact /></section>
   </div>
 </template>
 

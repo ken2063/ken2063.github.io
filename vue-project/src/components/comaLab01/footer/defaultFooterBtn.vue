@@ -1,7 +1,10 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from "vue";
+import Contact from "@/components/comaLab01/contents/contact.vue"; // 대문자로!
 
+const isContactOpen = ref(false);
 const isShowClass = ref(false);
+
 let lastScrollPosition = 0;
 
 function handleScroll() {
@@ -23,7 +26,12 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="foot-box" :class="{ show: isShowClass }"></div>
+  <div class="foot-box" :class="{ show: isShowClass }">
+    <button @click="isContactOpen = true">?</button>
+  </div>
+
+  <!-- Contact 팝업: isContactOpen이 true일 때만 표시 -->
+  <Contact v-if="isContactOpen" @close="isContactOpen = false" />
 </template>
 
 <style lang="scss">

@@ -4,10 +4,12 @@ import defaultMenu from "@/components/comaLab01/head/defaultMenu.vue";
 
 <template>
   <header id="header">
-    <h1>
-      <a href="#"></a>
-    </h1>
-    <defaultMenu class="hamButton"></defaultMenu>
+    <div class="head">
+      <h1>
+        <a href="#">ED portfolio</a>
+      </h1>
+      <defaultMenu class="hamButton"></defaultMenu>
+    </div>
   </header>
 </template>
 

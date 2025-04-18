@@ -447,6 +447,12 @@ select::-ms-expand {
   display: flex;
   align-items: center;
 }
+.grid {
+  display: grid;
+}
+.gridx2 {
+  grid-template-columns: repeat(2, 1fr);
+}
 
 #wrap {
   padding: 40px 20px 0;

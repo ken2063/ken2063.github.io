@@ -4,7 +4,7 @@
 
 <template>
   <section id="about">
-    <h2 class="fs-big">ABOUT</h2>
+    <h2>최석에 대해 <span>알려</span>드려요!</h2>
 
     <div class="con-box"></div>
   </section>

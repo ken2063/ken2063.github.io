@@ -3,8 +3,24 @@
   margin: 0 -20px;
   background-color: #f1f4f8;
 
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #3617ce;
+    z-index: 1;
+  }
+
   #home {
+    position: relative;
+    z-index: 3;
     padding: 0;
+
     h2 {
       margin: 0 auto 40px;
       text-align: center;
@@ -12,32 +28,72 @@
     .bx-wrapper {
       box-shadow: none;
       border: none;
+      margin: 20px auto 0;
+      width: 90%;
+      height: 200px;
+      background-color: transparent;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.0784313725);
 
       .bxslider {
         li {
           position: relative;
-          height: 100vh;
+          width: 100%;
+          height: 200px;
+          border-radius: 12px;
+          overflow: hidden;
+
+          &.slide01 {
+            background-color: #d5f3eb;
+
+            &::after {
+              content: "";
+              position: absolute;
+              right: 30px;
+              bottom: 20px;
+              display: inline-block;
+              width: 88px;
+              height: 97px;
+              background: url("/src/assets/images/comaLab01/portfolio/ico_home01.png")
+                no-repeat 0 0;
+              background-size: contain;
+            }
+          }
+          &.slide02 {
+            background-color: #f1d5f3;
+
+            &::after {
+              content: "";
+              position: absolute;
+              right: 30px;
+              bottom: 20px;
+              display: inline-block;
+              width: 88px;
+              height: 97px;
+              background: url("/src/assets/images/comaLab01/portfolio/ico_home01.png")
+                no-repeat 0 0;
+              background-size: contain;
+            }
+          }
 
           .txt-box {
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            max-width: 300px;
-            width: 100%;
-            text-align: center;
+            top: 35px;
+            left: 30px;
 
             .tit {
-              text-align: center;
-              color: #fff;
-              line-height: 34px;
+              color: #111;
+              font-size: 18px;
+              font-weight: 700;
+              line-height: 24px;
             }
 
             .txt {
               margin-top: 10px;
               display: inline-block;
-              text-align: center;
-              color: #fff;
+              font-size: 14px;
+              font-weight: 300;
             }
           }
           img {
@@ -54,71 +110,103 @@
         .bx-pager-item {
           a {
             &.active {
-              background-color: #fff;
+              background-color: #3617ce;
             }
           }
         }
       }
     }
   }
+
   #about {
-    padding: 0 20px 40px;
-    h2 {
-      margin: 0 auto 40px;
-      text-align: center;
-    }
-  }
-  #skill {
-    padding: 40px 20px 40px;
-    margin: 0 -20px 40px;
-    background-color: #6152ea;
+    padding: 40px 0px 0;
 
     h2 {
       margin: 0 auto 10px;
-      text-align: center;
-      color: #fff;
-    }
-    .scroll-box-table {
-      width: 100%;
-      overflow-x: auto;
-      padding-left: 20px;
-      margin: 0 auto;
+      padding: 0 20px;
+      line-height: 24px;
+      font-size: 18px;
 
-      .con-box {
-        display: flex;
-        align-items: flex-start;
-        width: 1500px;
+      span {
+        font-weight: 700;
+        color: #3617ce;
+      }
+    }
+
+    .con-box {
+      width: 100%;
+      height: 350px;
+      background: url("/src/assets/images/comaLab01/portfolio/img_about_bg.jpg")
+        no-repeat 0 0;
+      background-size: cover;
+    }
+  }
+  #skill {
+    padding: 40px 20px 0;
+
+    h2 {
+      margin: 0 auto 10px;
+      line-height: 24px;
+      font-size: 18px;
+
+      span {
+        font-weight: 700;
+        color: #3617ce;
+      }
+    }
+
+    .con-box {
+      padding: 30px 20px;
+      width: 100%;
+      border-radius: 12px;
+      background-color: #fff;
+      overflow: hidden;
+      box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.0784313725);
+
+      .skill-list {
         li {
-          width: 280px;
-          margin-right: 20px;
-          background-color: #fff;
-          border-radius: 12px;
-          overflow: hidden;
-          padding: 20px 30px;
-          box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.0784313725);
+          position: relative;
+          padding: 15px 0;
+          display: flex;
+          align-items: center;
+          border-bottom: 1px solid #ddd;
+
+          &:first-child {
+            padding-top: 0;
+          }
+          &:last-child {
+            padding-bottom: 0;
+            border-bottom: 0;
+          }
 
           .thumb {
-            width: 100px;
-            height: 100px;
-            margin: 20px auto;
+            position: relative;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
             overflow: hidden;
-            text-align: center;
+            flex-shrink: 0;
+            background-color: #eaeaea;
 
             img {
-              height: 100%;
-              width: auto;
-              object-fit: cover;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              width: 60%;
+              transform: translate(-50%, -50%);
             }
           }
+
           dl {
+            margin-left: 10px;
+
             .pub-tit {
-              font-size: 24px;
+              font-size: 18px;
               font-weight: 700;
-              margin-bottom: 10px;
             }
             .pub-txt {
               font-size: 14px;
-              color: #747478;
+              color: #888;
             }
           }
         }
@@ -126,15 +214,97 @@
     }
   }
   #portfolio {
-    padding: 0 20px 40px;
+    margin-top: 40px;
+    padding: 40px 20px;
+    background-color: #fff;
+
     h2 {
-      margin: 0 auto 40px;
-      text-align: center;
+      margin: 0 auto 10px;
+      line-height: 24px;
+      font-size: 18px;
+
+      span {
+        font-weight: 700;
+        color: #3617ce;
+      }
+    }
+
+    .scroll-box {
+      overflow-x: auto;
+
+      ul {
+        display: flex;
+        gap: 5px;
+        width: 595px;
+
+        li {
+          padding: 8px 16px;
+          border-radius: 20px;
+          color: #888;
+          background: #fff;
+          transition: background 0.2s;
+          border: 1px solid #ddd;
+
+          &.active {
+            background: #3617ce;
+            color: #fff;
+            font-weight: 700;
+            border: 1px solid #3617ce;
+          }
+        }
+      }
+    }
+
+    .portfolio-list {
+      margin: 10px auto 0;
+
+      ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+
+        li {
+          width: 100%;
+          border-radius: 12px;
+          overflow: hidden;
+          box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.0784313725);
+
+          .thumb {
+            height: 120px;
+            // background-color: #3617ce;
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          .txt-box {
+            max-height: 94px;
+            padding: 15px;
+            background-color: #fff;
+
+            .tit {
+              font-size: 18px;
+              font-weight: 700;
+            }
+
+            .txt {
+              display: inline-block;
+              height: 32px;
+              margin-top: 5px;
+              font-size: 14px;
+              line-height: 16px;
+              color: #888;
+            }
+          }
+        }
+      }
     }
   }
   #career {
     position: relative;
-    padding: 0 20px 40px;
+    padding: 40px 20px;
     margin: 0 auto 0;
     // background: url("/src/assets/images/comaLab01/portfolio/bg_career.jpg")
     //   no-repeat center center;
@@ -220,40 +390,6 @@
         }
         .date {
           color: #747478;
-        }
-      }
-    }
-  }
-  #contact {
-    padding: 0 20px 40px;
-    margin: 0 auto 0;
-
-    h2 {
-      margin: 0 auto 10px;
-      text-align: center;
-    }
-    .con-box {
-      background-color: #fff;
-      border-radius: 12px;
-      overflow: hidden;
-      padding: 40px;
-      box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.0784313725);
-
-      .thumb {
-        margin: 0 -40px 20px;
-      }
-      .p-tit {
-        padding-bottom: 6px;
-        margin-bottom: 12px;
-        border-bottom: 1px solid #2c57ce;
-      }
-      dl {
-        .tit {
-          font-weight: 700;
-        }
-        .txt {
-          margin-bottom: 6px;
-          color: #818181;
         }
       }
     }

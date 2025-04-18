@@ -11,6 +11,7 @@ onMounted(() => {
     infiniteLoop: true,
     responsive: true,
     controls: false,
+    slideMargin: 20,
     auto: true, // 자동 슬라이드 활성화
     pause: 3000, // 각 슬라이드가 보여지는 시간 (ms), 예: 4000ms = 4초
     autoStart: true, // (기본값 true, 명시해도 무방)
@@ -21,29 +22,19 @@ onMounted(() => {
 <template>
   <section id="home">
     <ul class="bxslider">
-      <li>
+      <li class="slide01">
         <div class="txt-box">
-          <p class="tit fs-big">WELCOME TO MY PORTFOLIO</p>
-          <span class="txt fs-normal">저의 포트폴리오를 소개합니다.</span>
+          <p class="tit">WELCOME TO MY<br />PORTFOLIO</p>
+          <span class="txt">저의 포트폴리오를 소개합니다.</span>
         </div>
-        <img src="/src/assets/images/comaLab01/portfolio/bg01.jpg" alt="" />
       </li>
 
-      <li>
+      <li class="slide02">
         <div class="txt-box">
-          <p class="tit fs-big">WELCOME TO MY PORTFOLIO</p>
-          <span class="txt fs-normal">저의 포트폴리오를 소개합니다.</span>
+          <p class="tit">WELCOME TO MY<br />PORTFOLIO</p>
+          <span class="txt">저의 포트폴리오를 소개합니다.</span>
         </div>
-        <img src="/src/assets/images/comaLab01/portfolio/bg02.jpg" alt="" />
       </li>
-
-      <!-- <li>
-        <div class="txt-box">
-          <p class="tit fs-big">WELCOME TO MY PORTFOLIO</p>
-          <span class="txt fs-normal">저의 포트폴리오를 소개합니다.</span>
-        </div>
-        <img src="/src/assets/images/comaLab01/portfolio/bg03.jpg" alt="" />
-      </li> -->
     </ul>
   </section>
 </template>

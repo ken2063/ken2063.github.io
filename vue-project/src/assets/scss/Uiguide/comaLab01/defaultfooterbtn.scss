@@ -1,16 +1,84 @@
 .foot-box {
   position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100px;
-  background-color: #fff;
-  border-top: 1px solid #ddd;
-  box-shadow: 0px -7px 40px -10px rgba(0, 0, 0, 0.2);
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #3617ce;
+  box-shadow: 0px -7px 40px -10px rgba(45, 33, 106, 0.6);
   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  transform: translateY(100%);
+  transform: translate(-50%, 200%);
 
   &.show {
-    transform: translateY(0);
+    transform: translate(-50%, 0);
+  }
+
+  button {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+#contact {
+  margin: 0 auto;
+  background-color: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+
+  .contact-con {
+    padding: 40px 20px;
+    position: relative;
+    background: #fff;
+
+    .close-btn {
+      position: absolute;
+      top: 0px;
+      right: 20px;
+      width: 30px;
+      height: 30px;
+      background: url("/src/assets/images/comaLab01/portfolio/icon-contact-close.png")
+        no-repeat 0 0;
+      background-size: contain;
+      text-indent: -99999px;
+    }
+
+    h2 {
+      margin: 0 auto 10px;
+      text-align: center;
+    }
+    .con-box {
+      background-color: #fff;
+      // border-radius: 12px;
+      // overflow: hidden;
+      // padding: 40px;
+      // box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.0784313725);
+
+      .thumb {
+        margin: 0 -20px 20px;
+      }
+      .p-tit {
+        padding-bottom: 6px;
+        margin-bottom: 12px;
+        border-bottom: 1px solid #2c57ce;
+      }
+      dl {
+        .tit {
+          font-weight: 700;
+        }
+        .txt {
+          margin-bottom: 6px;
+          color: #818181;
+        }
+      }
+    }
   }
 }
