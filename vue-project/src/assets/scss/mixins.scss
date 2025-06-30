@@ -1,80 +1,364 @@
-// mixins.scss
+// _mixin.scss
+@use "sass:math";
+@use "sass:map";
+// =============================================================================
+// 1. 반응형 디자인 (Responsive Design)
+// =============================================================================
 
-@import "@/assets/scss/variables.scss";
+// 브레이크포인트 정의
+$breakpoints: (
+  mobile: 480px,
+  tablet: 768px,
+  desktop: 1024px,
+  large: 1200px,
+);
 
-// Breakpoints
-@mixin mobile {
-  @media (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-tablet - 1px}) {
+@mixin respond-to($breakpoint) {
+  @if map.has-key($breakpoints, $breakpoint) {
+    @media (min-width: map.get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+}
+
+// =============================================================================
+// 2. 플렉스박스 (Flexbox)
+// =============================================================================
+
+// flex-center: 요소를 중앙 정렬
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// flex-center-column: 세로 방향 중앙 정렬
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+// flex-column: 세로 정렬
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex($direction: row, $justify: flex-start, $align: stretch, $wrap: nowrap) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: $wrap;
+}
+
+// =============================================================================
+// 3. 포지셔닝 (Positioning)
+// =============================================================================
+
+// absolute-center: absolute로 중앙 정렬
+@mixin absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// absolute: absolute로 풀 정렬
+@mixin absolute-full {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+// absolute: absolute 포지션 지정
+@mixin position($position, $top: null, $right: null, $bottom: null, $left: null) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+// =============================================================================
+// 4. 크기 및 간격 (Size & Spacing)
+// =============================================================================
+
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin square($size) {
+  @include size($size);
+}
+
+@mixin circle($size) {
+  @include size($size);
+  border-radius: 50%;
+}
+
+@mixin border-radius($size) {
+  border-radius: $size;
+}
+
+@mixin padding($top, $right: $top, $bottom: $top, $left: $right) {
+  padding: $top $right $bottom $left;
+}
+
+@mixin margin($top, $right: $top, $bottom: $top, $left: $right) {
+  margin: $top $right $bottom $left;
+}
+
+// =============================================================================
+// 5. 텍스트 스타일링 (Typography)
+// =============================================================================
+
+@mixin font($size, $weight: normal, $line-height: 1.4) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+}
+
+@mixin text-ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@mixin text-clamp($lines: 2) {
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@mixin placeholder {
+  &::placeholder {
+    @content;
+  }
+  &::-webkit-input-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
     @content;
   }
 }
 
-@mixin tablet {
-  @media (min-width: #{$breakpoint-tablet}) and (max-width: #{$breakpoint-desktop - 1px}) {
-    @content;
+// =============================================================================
+// 6. 버튼 스타일 (Button Styles)
+// =============================================================================
+
+@mixin button-base {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
   }
 }
 
-@mixin desktop {
-  @media (min-width: #{$breakpoint-desktop}) {
-    @content;
+@mixin button-variant($bg-color, $text-color: white, $hover-bg: darken($bg-color, 10%)) {
+  @include button-base;
+  background-color: $bg-color;
+  color: $text-color;
+
+  &:hover:not(:disabled) {
+    background-color: $hover-bg;
   }
 }
 
-@include mobile {
+// =============================================================================
+// 7. 그림자 및 효과 (Shadows & Effects)
+// =============================================================================
+
+@mixin box-shadow($x: 0, $y: 2px, $blur: 4px, $color: rgba(0, 0, 0, 0.1)) {
+  box-shadow: $x $y $blur $color;
 }
 
-@include tablet {
+@mixin card-shadow {
+  @include box-shadow(0, 2px, 8px, rgba(0, 0, 0, 0.1));
 }
 
-@include desktop {
+@mixin hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    @include box-shadow(0, 4px, 12px, rgba(0, 0, 0, 0.15));
+  }
 }
 
-@mixin small-txt {
-  /* 선언 */
-  font: {
-    size: 13px;
-    weight: 300;
-    family: sans-serif;
-  }
-}
-@mixin normal-txt {
-  /* 선언 */
-  font: {
-    size: 16px;
-    weight: 400;
-    family: sans-serif;
-  }
-}
-@mixin large-txt {
-  /* 선언 */
-  font: {
-    size: 22px;
-    weight: 500;
-    family: sans-serif;
-  }
-}
-@mixin big-txt {
-  /* 선언 */
-  font: {
-    size: 28px;
-    weight: 700;
-    family: sans-serif;
-  }
-}
-h1 {
-  @include large-txt; /* 사용 */
+// =============================================================================
+// 8. 애니메이션 (Animation)
+// =============================================================================
+
+@mixin transition($property: all, $duration: 0.3s, $timing: ease) {
+  transition: $property $duration $timing;
 }
 
-.fs-small {
-  @include small-txt;
+@mixin fade-in($duration: 0.3s) {
+  opacity: 0;
+  animation: fadeIn $duration ease-in-out forwards;
 }
-.fs-normal {
-  @include normal-txt;
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
 }
-.fs-large {
-  @include large-txt;
+
+@mixin slide-up($duration: 0.3s) {
+  transform: translateY(20px);
+  opacity: 0;
+  animation: slideUp $duration ease-out forwards;
 }
-.fs-big {
-  @include big-txt;
+
+@keyframes slideUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+// =============================================================================
+// 9. 그리드 시스템 (Grid System)
+// =============================================================================
+
+@mixin grid($columns: 12, $gap: 1rem) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  gap: $gap;
+}
+
+@mixin grid-item($col-start: 1, $col-end: -1) {
+  grid-column: $col-start / $col-end;
+}
+
+// =============================================================================
+// 10. 유틸리티 (Utilities)
+// =============================================================================
+
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+@mixin reset-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin reset-button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  font: inherit;
+}
+
+// =============================================================================
+// 11. 스크롤바 커스터마이징 (Scrollbar)
+// =============================================================================
+
+@mixin custom-scrollbar($width: 8px, $track-color: #f1f1f1, $thumb-color: #c1c1c1) {
+  &::-webkit-scrollbar {
+    width: $width;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $track-color;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $thumb-color;
+    border-radius: $width / 2;
+
+    &:hover {
+      background: darken($thumb-color, 20%);
+    }
+  }
+}
+
+// =============================================================================
+// 12. 폼 요소 (Form Elements)
+// =============================================================================
+
+@mixin input-base {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+
+  &:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+
+  &:disabled {
+    background-color: #f8f9fa;
+    cursor: not-allowed;
+  }
+}
+
+/* 글자 말줄임 : @include ellipsis() */
+@mixin ellipsis($line: 1) {
+  @if ($line == 1) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  } @else {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word; // 공백 없을때 글자 짤림 방지
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $line;
+  }
+}
+
+// rem: px 값을 rem으로 변환
+@function rem($px) {
+  @return ($px / 16) * 1rem;
+}
+
+// class="blind" 기능
+@mixin blind {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  clip: rect(0 0 0 0) !important;
+  overflow: hidden !important;
 }

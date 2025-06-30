@@ -1,3 +1,5 @@
+@use "@/assets/scss/mixins.scss" as *;
+
 .contents {
   padding-top: 14px;
   margin: 0 -20px;
@@ -165,6 +167,9 @@
       box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.0784313725);
 
       .skill-list {
+        display:grid;
+        grid-template-columns: repeat(1, 1fr);
+
         li {
           position: relative;
           padding: 15px 0;
@@ -218,6 +223,11 @@
           }
         }
       }
+      @include respond-to(tablet) {
+        .skill-list {
+        grid-template-columns: repeat(2, 1fr);
+        }
+      }
     }
   }
 
@@ -252,6 +262,7 @@
           background: #fff;
           transition: background 0.2s;
           border: 1px solid #ddd;
+          cursor: pointer;
 
           &.active {
             background: #3617ce;
@@ -304,6 +315,18 @@
               font-size: 14px;
               line-height: 16px;
               color: #888;
+            }
+          }
+        }
+      }
+
+      @include respond-to(tablet) {
+        ul {
+          grid-template-columns: repeat(3, 1fr);
+
+          li {
+            .thumb {
+            height:240px;
             }
           }
         }
@@ -402,6 +425,12 @@
         }
       }
     }
+  }
+}
+
+@include respond-to(tablet) {
+  .contents {
+    padding-top:44px;
   }
 }
 

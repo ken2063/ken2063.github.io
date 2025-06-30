@@ -10,6 +10,6 @@
 </template>
 
 <style lang="scss">
-@import "@/assets/scss/import.scss";
-@import "@/assets/scss/Uiguide/guideIndex.scss";
+@use "@/assets/scss/import.scss" as *;
+@use "@/assets/scss/Uiguide/guideIndex.scss" as *;
 </style>

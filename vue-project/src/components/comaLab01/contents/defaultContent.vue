@@ -1,7 +1,15 @@
+<template>
+  <div class="contents">
+    <section><home /></section>
+    <!-- <section v-fade-up="vFadeUp"><about /></section> -->
+    <section v-fade-up="vFadeUp"><skill /></section>
+    <section v-fade-up="vFadeUp"><portfolio /></section>
+    <section v-fade-up="vFadeUp"><career /></section>
+  </div>
+</template>
 <script setup>
-import { onMounted } from "vue";
 import home from "@/components/comaLab01/contents/home.vue";
-import about from "@/components/comaLab01/contents/about.vue";
+// import about from "@/components/comaLab01/contents/about.vue";
 import skill from "@/components/comaLab01/contents/skill.vue";
 import portfolio from "@/components/comaLab01/contents/portfolio.vue";
 import career from "@/components/comaLab01/contents/career.vue";
@@ -23,19 +31,8 @@ const vFadeUp = {
   },
 };
 </script>
-
-<template>
-  <div class="contents">
-    <section><home /></section>
-    <section v-fade-up="vFadeUp"><about /></section>
-    <section v-fade-up="vFadeUp"><skill /></section>
-    <section v-fade-up="vFadeUp"><portfolio /></section>
-    <section v-fade-up="vFadeUp"><career /></section>
-  </div>
-</template>
-
 <style lang="scss">
-@import "@/assets/scss/Uiguide/comaLab01/defaultcontents.scss";
+@use "@/assets/scss/Uiguide/comaLab01/defaultcontents.scss" as *;
 
 .fade-up-init {
   opacity: 0;

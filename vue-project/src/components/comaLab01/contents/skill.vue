@@ -1,3 +1,21 @@
+<template>
+  <section id="skill">
+    <h2>바로 지금, <span>SKILL</span> 항목을 알려드려요!</h2>
+    <div class="con-box">
+      <ul class="skill-list">
+        <li v-for="(skill, idx) in skills" :key="idx">
+          <div class="thumb">
+            <img :src="skill.img" :alt="skill.title" />
+          </div>
+          <dl>
+            <dt class="pub-tit">{{ skill.title }}</dt>
+            <dd class="pub-txt">{{ skill.desc }}</dd>
+          </dl>
+        </li>
+      </ul>
+    </div>
+  </section>
+</template>
 <script setup>
 const skills = [
   {
@@ -37,22 +55,3 @@ const skills = [
   },
 ];
 </script>
-
-<template>
-  <section id="skill">
-    <h2>바로 지금, <span>SKILL</span> 항목을 알려드려요!</h2>
-    <div class="con-box">
-      <ul class="skill-list">
-        <li v-for="(skill, idx) in skills" :key="idx">
-          <div class="thumb">
-            <img :src="skill.img" :alt="skill.title" />
-          </div>
-          <dl>
-            <dt class="pub-tit">{{ skill.title }}</dt>
-            <dd class="pub-txt">{{ skill.desc }}</dd>
-          </dl>
-        </li>
-      </ul>
-    </div>
-  </section>
-</template>

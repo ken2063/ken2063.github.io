@@ -1,14 +1,3 @@
-<script setup>
-const shinhanPortfolio = [
-  {
-    img: "./images/comaLab01/portfolio/portfolioList/shinhan01.png", // 이미지 경로 입력
-    title: "신한카드",
-    desc: "마이데이터 APP 운영",
-  },
-  // 필요시 더 추가
-];
-</script>
-
 <template>
   <div class="portfolio-list">
     <ul>
@@ -24,3 +13,13 @@ const shinhanPortfolio = [
     </ul>
   </div>
 </template>
+<script setup>
+const shinhanPortfolio = [
+  {
+    img: "./images/comaLab01/portfolio/portfolioList/shinhan01.png", // 이미지 경로 입력
+    title: "신한카드",
+    desc: "마이데이터 APP 운영",
+  },
+  // 필요시 더 추가
+];
+</script>

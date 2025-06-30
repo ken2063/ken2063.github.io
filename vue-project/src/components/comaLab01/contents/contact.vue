@@ -1,7 +1,3 @@
-<script setup>
-const imgSrc = "./images/comaLab01/portfolio/pic.jpg";
-</script>
-
 <template>
   <section id="contact">
     <div class="contact-con">
@@ -28,3 +24,6 @@ const imgSrc = "./images/comaLab01/portfolio/pic.jpg";
     </div>
   </section>
 </template>
+<script setup>
+const imgSrc = "./images/comaLab01/portfolio/pic.jpg";
+</script>

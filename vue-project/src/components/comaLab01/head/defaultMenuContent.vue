@@ -1,7 +1,3 @@
-<script setup>
-// 별도의 로직이 없으므로 비워둡니다.
-</script>
-
 <template>
   <div class="defaultMenuContent">
     <div class="pop_head">
@@ -23,7 +19,9 @@
     </div>
   </div>
 </template>
-
+<script setup>
+// 별도의 로직이 없으므로 비워둡니다.
+</script>
 <style scoped>
 /* 필요에 따라 스타일을 추가하세요 */
 </style>

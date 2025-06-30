@@ -1,0 +1,11 @@
+@use "@/assets/scss/mixins.scss" as *;
+  #portfolio {
+    margin:0 auto;
+    max-width:100%;
+  }
+  
+  @include respond-to(tablet) {
+    #portfolio {
+      max-width:1280px;
+    }
+  }

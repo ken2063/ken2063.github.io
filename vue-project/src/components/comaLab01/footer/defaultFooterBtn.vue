@@ -1,3 +1,13 @@
+<template>
+  <div class="foot-box" :class="{ show: isShowClass }">
+    <button @click="isContactOpen = true">
+      <img :src="imgSrc" alt="" />
+    </button>
+  </div>
+
+  <!-- Contact 팝업: isContactOpen이 true일 때만 표시 -->
+  <Contact v-if="isContactOpen" @close="isContactOpen = false" />
+</template>
 <script setup>
 const imgSrc = "./images/comaLab01/portfolio/my.png";
 
@@ -26,18 +36,6 @@ onUnmounted(() => {
   window.removeEventListener("scroll", handleScroll);
 });
 </script>
-
-<template>
-  <div class="foot-box" :class="{ show: isShowClass }">
-    <button @click="isContactOpen = true">
-      <img :src="imgSrc" alt="" />
-    </button>
-  </div>
-
-  <!-- Contact 팝업: isContactOpen이 true일 때만 표시 -->
-  <Contact v-if="isContactOpen" @close="isContactOpen = false" />
-</template>
-
 <style lang="scss">
-@import "@/assets/scss/Uiguide/comaLab01/defaultfooterbtn.scss";
+@use "@/assets/scss/Uiguide/comaLab01/defaultfooterbtn.scss" as *;
 </style>

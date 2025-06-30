@@ -1,7 +1,3 @@
-<script setup>
-// import defaultMenu from "@/components/comaLab01/head/defaultMenu.vue";
-</script>
-
 <template>
   <header id="header">
     <div class="head">
@@ -12,7 +8,9 @@
     </div>
   </header>
 </template>
-
-<style lang="scss">
-@import "@/assets/scss/Uiguide/comaLab01/defaulthead.scss";
+<script setup>
+// import defaultMenu from "@/components/comaLab01/head/defaultMenu.vue";
+</script>
+<style lang="scss" scoped>
+@use "@/assets/scss/Uiguide/comaLab01/defaulthead.scss" as *;
 </style>

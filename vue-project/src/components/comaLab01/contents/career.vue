@@ -1,3 +1,19 @@
+<template>
+  <section id="career">
+    <h2 class="fs-big">CAREER</h2>
+    <ul class="con-box">
+      <li v-for="(career, idx) in careers" :key="idx">
+        <span :class="career.flagClass">{{ career.flag }}</span>
+        <p class="com_name01" v-html="career.company"></p>
+        <p class="com_name02">{{ career.companySub }}</p>
+        <div class="flex">
+          <p class="work">{{ career.position }}</p>
+          <p class="date">{{ career.date }}</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+</template>
 <script setup>
 const careers = [
   {
@@ -50,20 +66,3 @@ const careers = [
   },
 ];
 </script>
-
-<template>
-  <section id="career">
-    <h2 class="fs-big">CAREER</h2>
-    <ul class="con-box">
-      <li v-for="(career, idx) in careers" :key="idx">
-        <span :class="career.flagClass">{{ career.flag }}</span>
-        <p class="com_name01" v-html="career.company"></p>
-        <p class="com_name02">{{ career.companySub }}</p>
-        <div class="flex">
-          <p class="work">{{ career.position }}</p>
-          <p class="date">{{ career.date }}</p>
-        </div>
-      </li>
-    </ul>
-  </section>
-</template>
