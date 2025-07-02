@@ -1,1 +1,0 @@
-import{_ as o,c as t,o as e}from"./index-kLpzXZhb.js";const c={name:"about",components:{}},n={id:"about"};function s(a,r,_,p,u,i){return e(),t("section",n,"about")}const f=o(c,[["render",s]]);export{f as default};

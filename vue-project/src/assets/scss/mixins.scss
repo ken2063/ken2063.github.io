@@ -1,3 +1,4 @@
+
 // _mixin.scss
 @use "sass:math";
 @use "sass:map";
@@ -42,6 +43,12 @@ $breakpoints: (
 @mixin flex-column {
   display: flex;
   flex-direction: column;
+}
+
+// flex-row: 가로 정렬
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
 }
 
 @mixin flex($direction: row, $justify: flex-start, $align: stretch, $wrap: nowrap) {
@@ -350,8 +357,10 @@ $breakpoints: (
 
 // rem: px 값을 rem으로 변환
 @function rem($px) {
-  @return ($px / 16) * 1rem;
+  $remValue: (math.div($px, $base-fz)) + rem;
+  @return $remValue;
 }
+$base-fz: 10;
 
 // class="blind" 기능
 @mixin blind {
@@ -361,4 +370,107 @@ $breakpoints: (
   margin: -1px !important;
   clip: rect(0 0 0 0) !important;
   overflow: hidden !important;
+}
+// blind 클래스 자동 생성 mixin
+@mixin generate-blind-class {
+  .blind {
+    @include blind;
+  }
+}
+
+// margin값 자동 클래스 생성
+// margin 클래스 생성 mixin
+@mixin generate-margin-classes($max: 100, $step: 5) {
+  // margin-top 클래스들
+  @for $i from 0 through $max {
+    @if $i % $step == 0 or $i <= 20 {
+      .mgt#{$i} {
+        margin-top: rem($i) !important;
+      }
+    }
+  }
+  
+  // margin-bottom 클래스들
+  @for $i from 0 through $max {
+    @if $i % $step == 0 or $i <= 20 {
+      .mgb#{$i} {
+        margin-bottom: rem($i) !important;
+      }
+    }
+  }
+  
+  // margin-left 클래스들
+  @for $i from 0 through $max {
+    @if $i % $step == 0 or $i <= 20 {
+      .mgl#{$i} {
+        margin-left: rem($i) !important;
+      }
+    }
+  }
+  
+  // margin-right 클래스들
+  @for $i from 0 through $max {
+    @if $i % $step == 0 or $i <= 20 {
+      .mgr#{$i} {
+        margin-right: rem($i) !important;
+      }
+    }
+  }
+  
+  // margin 전체 클래스들
+  @for $i from 0 through $max {
+    @if $i % $step == 0 or $i <= 20 {
+      .mg#{$i} {
+        margin: rem($i) !important;
+      }
+    }
+  }
+}
+
+// padding 클래스 생성 mixin
+@mixin generate-padding-classes($max: 100, $step: 5) {
+  // padding-top 클래스들
+  @for $i from 0 through $max {
+    @if $i % $step == 0 or $i <= 20 {
+      .pdt#{$i} {
+        padding-top: rem($i) !important;
+      }
+    }
+  }
+  
+  // padding-bottom 클래스들
+  @for $i from 0 through $max {
+    @if $i % $step == 0 or $i <= 20 {
+      .pdb#{$i} {
+        padding-bottom: rem($i) !important;
+      }
+    }
+  }
+  
+  // padding-left 클래스들
+  @for $i from 0 through $max {
+    @if $i % $step == 0 or $i <= 20 {
+      .pdl#{$i} {
+        padding-left: rem($i) !important;
+      }
+    }
+  }
+  
+  // padding-right 클래스들
+  @for $i from 0 through $max {
+    @if $i % $step == 0 or $i <= 20 {
+      .pdr#{$i} {
+        padding-right: rem($i) !important;
+      }
+    }
+  }
+  
+  // padding 전체 클래스들
+  @for $i from 0 through $max {
+    @if $i % $step == 0 or $i <= 20 {
+      .pd#{$i} {
+        padding: rem($i) !important;
+      }
+    }
+  }
 }

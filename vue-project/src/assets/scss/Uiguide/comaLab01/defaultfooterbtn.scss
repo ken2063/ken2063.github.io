@@ -1,3 +1,6 @@
+@use "@/assets/scss/mixins.scss" as *;
+@use "@/assets/scss/variables.scss" as *;
+
 .foot-box {
   position: fixed;
   bottom: 20px;
@@ -27,38 +30,36 @@
 
 #contact {
   margin: 0 auto;
-  background-color: #fff;
+  background: #f2f4f7;
   position: fixed;
   left: 0;
   top: 0;
   width: 100vw;
   height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   z-index: 1000;
+  overflow-y: auto;
 
   .contact-con {
-    padding: 40px 20px;
+    max-width:768px;
+    width:100%;
+    padding: 80px 20px 40px;
     position: relative;
-    background: #fff;
 
     .close-btn {
       position: absolute;
-      top: 0px;
-      right: 20px;
-      width: 30px;
-      height: 30px;
+      top: rem(20);
+      right: rem(20);
+      width: rem(30);
+      height: rem(30);
       background: url("/src/assets/images/comaLab01/portfolio/icon-contact-close.png")
         no-repeat 0 0;
       background-size: contain;
       text-indent: -99999px;
     }
 
-    h2 {
-      margin: 0 auto 10px;
-      text-align: center;
-    }
     .con-box {
       background-color: #fff;
       // border-radius: 12px;
@@ -66,21 +67,247 @@
       // padding: 40px;
       // box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.0784313725);
 
-      .thumb {
-        margin: 0 -20px 20px;
+      & + .con-box {
+        margin-top:rem(20);
       }
-      .p-tit {
-        padding-bottom: 6px;
-        margin-bottom: 12px;
-        border-bottom: 1px solid #2c57ce;
+
+      h3 {
+        font-size:rem(18);
+        margin-bottom:rem(10);
       }
-      dl {
-        .tit {
-          font-weight: 700;
+      
+      // profile
+      .profile-box {
+        display:flex;
+        align-items: flex-start;
+
+        .thumb {
+          width:rem(140);
+          height:rem(180);
+          flex-shrink: 0;
         }
-        .txt {
-          margin-bottom: 6px;
-          color: #818181;
+        dl {
+            @include grid($columns: 1);
+            gap:rem(5) rem(20);
+            padding:rem(20);
+
+          .tit {
+            font-weight: 700;
+          }
+          .txt {
+            color: #818181;
+          }
+        }
+      }
+      // profile
+
+      // skill
+      .skill-box01 {
+        padding:rem(40) rem(20);
+
+        ul {
+          @include grid($columns: 1);
+          width:100%;
+          gap:rem(10);
+          text-align: center;
+
+          li {
+            position:relative;
+            @include flex-row;
+            gap:rem(4);
+
+            &:not(:last-child)::before {
+              
+            }
+
+            .tit01 {
+              font-size:rem(16); 
+              color:#66707A;}
+              font-weight:700;
+
+            .tit02 {
+              font-size:rem(16); 
+              font-weight:300;
+            }
+            .txt {
+              font-size:rem(16); 
+              font-weight:700;
+            }
+          }
+        }
+      }
+      .skill-box02 {
+        border-top:1px solid #ddd;
+        padding:rem(40) rem(20);
+
+        .sklii-list {
+          display:inline-block;
+
+          li {
+            float:left;
+            padding:rem(5) rem(12);
+            border:1px solid #ddd;
+            @include border-radius(5px);
+            background-color:#eaeaea;
+
+            &:not(:last-child) {
+              margin-right:rem(5);
+                margin-bottom:rem(5);
+            }
+          }
+        }
+      }
+      // skill
+
+      .data-list-box {
+          li {
+            display:flex;
+            align-items: flex-start;
+            flex-direction: column;
+            
+            &:not(:last-child) {
+              padding-bottom:rem(20);
+              border-bottom:1px solid #ddd;
+            }
+            &:not(:first-child) {
+              padding-top:rem(20);
+            }
+
+            .date {
+              margin-top:rem(4);
+              flex-shrink: 0;
+              min-width:rem(140);
+
+              .date-to {}
+              .date-total {
+                font-weight:700;
+                color:#3617ce;
+              }
+            }
+
+            .info {
+              margin-left:rem(0);
+              margin-top:rem(10);
+
+              .tit {
+                font-size:rem(18);
+                font-weight:700;
+
+                span {
+                  display:inline-block;
+                  margin-left:rem(10);
+                  color:#888;
+                  font-weight:500;
+                  font-size:rem(14);
+                }
+              }
+              .txt {
+                font-size:rem(14);
+              }
+
+              dl {
+                display:flex;
+                align-items: center;
+
+                dt {
+                  font-weight:700;
+                  font-size:rem(14);
+                  color:#888;
+                }
+                dd {
+                  margin-left:rem(40);
+                  font-weight:500;
+                  font-size:rem(14);
+                  color:#888;
+                }
+              }
+            }
+          }
+        }
+
+      // career
+      .career-box {
+        padding:rem(40) rem(20);
+      }
+      // career
+
+      // education
+      .edu-box {
+        padding:rem(40) rem(20);
+      }
+      // education
+
+      // license
+      .license-box {
+        padding:rem(40) rem(20);
+      }
+      // license
+
+      // prize
+      .prize-box {
+        padding:rem(40) rem(20);
+      }
+      // prize
+
+      // foreign
+      .foreign-box {
+        padding:rem(40) rem(20);
+      }
+      // foreign
+      
+      @include respond-to(tablet) {
+        .profile-box {
+          align-items: center;
+          dl {
+            @include grid($columns: 2);
+            padding:rem(0) rem(40);
+          }
+        }
+
+        .skill-box01 {
+          ul {
+            @include grid($columns: 2);
+            gap:rem(40);
+
+            li {
+              @include flex-column;
+
+              &:nth-child(odd)::before {
+              content:'';
+              display:inline-block;
+              width:rem(1);
+              height:rem(40);
+              position:absolute;
+              top:50%;
+              right:0;
+              transform: translateY(-50%);
+              background-color:#ddd;
+            }
+            }
+          }
+        }
+
+        .skill-box02 {
+          .sklii-list {
+            li {
+              &:not(:last-child) {
+                margin-right:rem(5);
+              }
+            }
+          }
+        }
+
+        .data-list-box {
+            li {
+              flex-direction: row;
+
+              .date {}
+
+              .info {
+                margin-left:rem(40);
+                margin-top:rem(0);
+              }
+            }
         }
       }
     }

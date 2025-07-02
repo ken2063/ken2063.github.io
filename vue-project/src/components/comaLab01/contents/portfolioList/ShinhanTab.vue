@@ -1,17 +1,17 @@
 <template>
-  <div class="portfolio-list">
-    <ul>
-      <li v-for="(item, idx) in shinhanPortfolio" :key="idx">
-        <div class="thumb">
-          <img :src="item.img" :alt="item.title" />
-        </div>
-        <div class="txt-box">
-          <p class="tit">{{ item.title }}</p>
-          <span class="txt">{{ item.desc }}</span>
-        </div>
-      </li>
-    </ul>
-  </div>
+    <div
+      class="portfolio-item"
+      v-for="item in shinhanPortfolio"
+      :key="item.id"
+    >
+      <div class="thumb">
+        <img :src="item.img" :alt="item.title" />
+      </div>
+      <div class="txt-box">
+        <p class="tit">{{ item.title }}</p>
+        <span class="txt">{{ item.desc }}</span>
+      </div>
+    </div>
 </template>
 <script setup>
 const shinhanPortfolio = [

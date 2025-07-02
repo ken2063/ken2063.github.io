@@ -187,12 +187,3 @@
     }
   }
 }
-
-@include mobile {
-  .scroll-box-table {
-    &.type02 {
-    table {
-      min-width:100% !important;
-    }}
-  }
-}

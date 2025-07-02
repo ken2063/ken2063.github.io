@@ -3,7 +3,7 @@
     <section><home /></section>
     <!-- <section v-fade-up="vFadeUp"><about /></section> -->
     <section v-fade-up="vFadeUp"><skill /></section>
-    <section v-fade-up="vFadeUp"><portfolio /></section>
+    <section><portfolio /></section>
     <section v-fade-up="vFadeUp"><career /></section>
   </div>
 </template>

@@ -9,5 +9,5 @@
 // 별도의 로직이 없으므로 비워둡니다.
 </script>
 <style lang="scss">
-@import "@/assets/scss/Uiguide/comaLab01/defaultfooter.scss";
+@use "@/assets/scss/Uiguide/comaLab01/defaultfooter.scss" as *;
 </style>
