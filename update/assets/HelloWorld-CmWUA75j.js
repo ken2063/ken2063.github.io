@@ -1,0 +1,1 @@
+import{_ as e}from"./_plugin-vue_export-helper-DlAUqK2U.js";import{c as o,o as r}from"./index-DM_ray7H.js";const c={};function t(n,l){return r(),o("h1",null,"이찬용 정신차려라")}const a=e(c,[["render",t]]);export{a as default};

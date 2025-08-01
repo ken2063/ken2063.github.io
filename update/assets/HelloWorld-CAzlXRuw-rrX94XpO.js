@@ -1,0 +1,1 @@
+import{s as o}from"./_plugin-vue_export-helper-DlAUqK2U-lGy7RumW.js";import{w as r,S as t}from"./index-ByUNfTcQ.js";const n={};function s(a,e){return t(),r("h1",null,"최정규 정신차려라")}const f=o(n,[["render",s]]);export{f as default};

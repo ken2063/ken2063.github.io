@@ -179,6 +179,7 @@
       .skill-list {
         display:grid;
         grid-template-columns: repeat(1, 1fr);
+        gap:rem(0);
 
         li {
           position: relative;
@@ -235,7 +236,14 @@
       }
       @include respond-to(tablet) {
         .skill-list {
-        grid-template-columns: repeat(2, 1fr);
+          grid-template-columns: repeat(2, 1fr);
+          gap:rem(10);
+
+          li {
+            &:last-child {
+              border-bottom: rem(1) solid #ddd;
+            }
+          }
         }
       }
     }
@@ -299,15 +307,13 @@
         .thumb {
           height: rem(200);
           // background-color: #3617ce;
+          overflow: hidden;
 
           img {
             width: 100%;
-            height: 100%;
-            object-fit: cover;
           }
         }
         .txt-box {
-          max-height: rem(94);
           padding: rem(15);
           background-color: #fff;
 
@@ -318,9 +324,9 @@
 
           .txt {
             display: inline-block;
-            height: 32px;
             margin-top: 5px;
             font-size: rem(14);
+            line-height:rem(18);
             color: #888;
           }
         }

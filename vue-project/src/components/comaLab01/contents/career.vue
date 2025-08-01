@@ -19,6 +19,14 @@ const careers = [
   {
     flag: "프리랜서",
     flagClass: "flag01",
+    company: "LG U+ 알닷",
+    companySub: "플래닛닷츠 4개월",
+    position: "선임",
+    date: "2025.05 – 2025.08",
+  },
+  {
+    flag: "프리랜서",
+    flagClass: "flag01",
     company: "LG U+",
     companySub: "프레임아웃/디플러 1년 4개월",
     position: "과장",

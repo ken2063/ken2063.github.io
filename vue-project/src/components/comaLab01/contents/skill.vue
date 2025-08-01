@@ -29,6 +29,11 @@ const skills = [
     desc: "React 학원과정 경험과 공부",
   },
   {
+    img: "./images/comaLab01/portfolio/ico_websquare.png",
+    title: "Websquare",
+    desc: "websquare admin 구축의 경험",
+  },
+  {
     img: "./images/comaLab01/portfolio/ico_html.png",
     title: "HTML",
     desc: "웹사이트 구축 및 운영 경험, 웹 표준과 접근성 준수에 강점이 있습니다.",

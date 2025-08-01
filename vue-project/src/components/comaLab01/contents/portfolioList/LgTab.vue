@@ -9,7 +9,7 @@
       </div>
       <div class="txt-box">
         <p class="tit">{{ item.title }}</p>
-        <span class="txt">{{ item.desc }}</span>
+      <span class="txt" v-html="item.desc"></span>
       </div>
     </div>
 </template>
@@ -17,27 +17,27 @@
 const lgPortfolio = [
   {
     id: 1,
-    img: "./images/comaLab01/portfolio/portfolioList/lgu01.jpg",
-    title: "LG U+",
-    desc: "PC/MO/APP 운영",
+    img: "./images/comaLab01/portfolio/portfolioList/lgu03.jpg",
+    title: "LG U+ 알닷",
+    desc: "PC/MO 구축<br/>(Vue, html, javascript, Figma)",
   },
   {
     id: 2,
-    img: "./images/comaLab01/portfolio/portfolioList/lgu02.png",
-    title: "LG U+",
-    desc: "웹접근성 획득",
+    img: "./images/comaLab01/portfolio/portfolioList/lgu04.jpg",
+    title: "LG U+ 알닷",
+    desc: "ADMIN 구축<br/>(WebSquare)",
   },
   {
     id: 3,
-    img: "./images/comaLab01/portfolio/portfolioList/lgu02.png",
-    title: "LG U+ 알닷",
-    desc: "PC/MO 구축",
+    img: "./images/comaLab01/portfolio/portfolioList/lgu01.jpg",
+    title: "LG U+",
+    desc: "PC/MO/APP 운영<br/>(Vue, html, javascript, Figma)",
   },
   {
     id: 4,
     img: "./images/comaLab01/portfolio/portfolioList/lgu02.png",
-    title: "LG U+ 알닷",
-    desc: "ADMIN 구축",
+    title: "LG U+",
+    desc: "웹접근성 획득",
   },
 ];
 </script>
