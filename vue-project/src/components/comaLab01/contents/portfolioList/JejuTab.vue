@@ -16,7 +16,7 @@
 <script setup>
 const jejuPortfolio = [
   {
-    img: "./images/comaLab01/portfolio/portfolioList/jeju01.png", // 이미지 경로 입력
+    img: "/images/comaLab01/portfolio/portfolioList/jeju01.png", // 이미지 경로 입력
     title: "제주은행",
     desc: "제주은행 PC/MO/APP 운영<br/>(html, javascript, Jquery, Zeplin)",
   },

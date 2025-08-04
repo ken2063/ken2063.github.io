@@ -1,9 +1,8 @@
-
 <template>
   <!-- list_header -->
   <div class="list_header">
     <h1>VUE - STUDY</h1>
-    <p class="info">Publishing List11</p>
+    <p class="info">Publishing List</p>
   </div>
   <!-- //list_header -->
 
@@ -89,7 +88,6 @@
   <codeLab05 id="codeLab05" /> 
   -->
 </template>
-
 <script setup>
 import codeLab01 from "@/views/layout/comaLab01/index.vue";
 // import codeLab02 from "@/views/layout/comaLab02/index.vue";
@@ -97,3 +95,4 @@ import codeLab01 from "@/views/layout/comaLab01/index.vue";
 // import codeLab04 from "@/views/layout/comaLab04/index.vue";
 // import codeLab05 from "@/views/layout/comaLab05/index.vue";
 </script>
+

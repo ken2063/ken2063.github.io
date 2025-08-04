@@ -1,5 +1,3 @@
-<script></script>
-
 <template>
   <!-- cont -->
   <div class="cont">
@@ -130,3 +128,4 @@
   </div>
   <!-- // cont -->
 </template>
+<script setup></script>
